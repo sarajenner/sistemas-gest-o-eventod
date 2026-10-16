@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Aluno | SGE</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #1e293b;
+    }
+
+    header {
+      background: linear-gradient(120deg, #243b80, #4169e1);
+      color: white;
+      padding: 28px 7%;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .logo span {
+      color: #b8d5ff;
+    }
+
+    header p {
+      margin: 7px 0 0;
+      color: #e2eaff;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 35px auto;
+      padding: 0 22px 35px;
+    }
+
+    .welcome {
+      margin-bottom: 28px;
+    }
+
+    .welcome h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+
+    .welcome p {
+      color: #64748b;
+      margin: 0;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      gap: 10px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 1.35rem;
+    }
+
+    .tag {
+      background: #e0eaff;
+      color: #2447a8;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    .events {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .event {
+      background: white;
+      border: 1px solid #e5eaf2;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 5px 16px rgba(25, 45, 90, 0.05);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: #edf2ff;
+      font-size: 1.35rem;
+      margin-bottom: 16px;
+    }
+
+    .event h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .info {
+      color: #64748b;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 17px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 9px;
+      background: #3156c8;
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 11px 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .note {
+      margin-top: 23px;
+      color: #64748b;
+      font-size: 0.88rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 23px;
+      color: #dbe5ff;
+      background: #172554;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 23px 6%;
+      }
+
+      .welcome h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="top">
+      <div>
+        <div class="logo">SGE <span>• Eventos da Escola</span></div>
+        <p>Sistema de Gestão de Eventos</p>
+      </div>
+
+      <div>Área do aluno</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h1>Olá, estudante! 👋</h1>
+      <p>
+        Confira os eventos disponíveis e participe das próximas
+        atividades da escola.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Próximos Eventos</h2>
+        <span class="tag">Inscrições abertas</span>
+      </div>
+
+      <div class="events">
+        <article class="event">
+          <div class="icon">💡</div>
+          <h3>Inovação e Tecnologia</h3>
+
+          <div class="info">
+            📅 22 de outubro de 2026<br>
+            🕒 19h às 20h30<br>
+            📍 Auditório da escola<br>
+            👥 Vagas disponíveis: 30
+          </div>
+
+          <button type="button">Inscrever-se</button>
+        </article>
+
+        <article class="event">
+          <div class="icon">💻</div>
+          <h3>Oficina de Desenvolvimento Web</h3>
+
+          <div class="info">
+            📅 27 de outubro de 2026<br>
+            🕒 14h às 16h<br>
+            📍 Laboratório de informática<br>
+            👥 Vagas disponíveis: 18
+          </div>
+
+          <button type="button">Inscrever-se</button>
+        </article>
+
+        <article class="event">
+          <div class="icon">🎓</div>
+          <h3>Preparação para o Futuro</h3>
+
+          <div class="info">
+            📅 4 de novembro de 2026<br>
+            🕒 9h às 11h<br>
+            📍 Sala de palestras<br>
+            👥 Vagas disponíveis: 25
+          </div>
+
+          <button type="button">Inscrever-se</button>
+        </article>
+      </div>
+
+      <p class="note">
+        Protótipo visual para demonstração. Os botões ainda não realizam
+        inscrições, pois esta atividade solicita apenas HTML e CSS,
+        sem JavaScript.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    SGE • Sistema de Gestão de Eventos — Escola Técnica
+  </footer>
+</body>
+</html>
